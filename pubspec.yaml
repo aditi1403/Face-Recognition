@@ -1,0 +1,116 @@
+name: face_detection_flutter
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.1 <3.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  cupertino_icons: ^1.0.2
+  flutter:
+    sdk: flutter
+  http: ^0.13.4
+  image_picker: ^0.8.4+11
+  file_picker: ^4.6.1
+
+dev_dependencies:
+  flutter_lints: ^1.0.0
+  flutter_test:
+    sdk: flutter
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+# The following section is specific to Flutter.
+flutter:
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - face_reco_python/images/000 - Vishal Sharma.jpg
+    - face_reco_python/images/0905FEE4-C099-47D1-A54C-D25B8BD954EE - Pratyaksh Vishnoi.jpeg
+    - face_reco_python/images/20220516_103347-removebg-preview - Tyagi Police CCTNS.jpg
+    - face_reco_python/images/20220612_234938_779 - Purshottam Sharma.jpg
+    - face_reco_python/images/16569998345021634721131999899322 - Saahieb Singh.jpg
+    - face_reco_python/images/16569998994656755321832349206401 - Ankit Bewal.jpg
+    - face_reco_python/images/B612_20211122_153817_579 - Harman Kaur.jpg
+    - face_reco_python/images/C9DB3480-3D37-46C3-AB42-04D09BE0EC99 - Devansh Chauhan.png
+    - face_reco_python/images/image_picker7792553624854984717.jpg
+    - face_reco_python/images/image_picker9014833945816226317.jpg
+    - face_reco_python/images/IMG-20191215-WA0015 - laxmi kumari.jpg
+    - face_reco_python/images/IMG-20210228-WA0029 - Harleen kaur.jpg
+    - face_reco_python/images/IMG-20210726-WA0151 - Sweekrati Giri.jpg
+    - face_reco_python/images/IMG-20210831-WA0090 - Ashish Yadav.jpg
+    - face_reco_python/images/IMG-20220314-WA0034 - Divjot kaur.jpg
+    - face_reco_python/images/IMG-20220603-WA0075 - Vishakha Shukla MTCS, SPUP.jpg
+    - face_reco_python/images/IMG-20220628-WA0028 - MacTavish.jpg
+    - face_reco_python/images/IMG-20220628-WA0359 - Abhinav Sharma.jpg
+    - face_reco_python/images/IMG-20220701-WA0024 - Prakhar Martand.jpg
+    - face_reco_python/images/IMG-20220705-WA0014 - manoj kumar.jpg
+    - face_reco_python/images/IMG_0907 - Muskaan Arora.JPG
+    - face_reco_python/images/IMG_5087__01 - Vtechster.jpg
+    - face_reco_python/images/IMG_20190915_001653 - BHAKTI HIRANI.jpg
+    - face_reco_python/images/IMG_20220310_211446 - Abhishrey Gupta.jpg
+    - face_reco_python/images/IMG_20220412_180251_856 - Harman Kaur.jpg
+    - face_reco_python/images/IMG_20220608_131608_756 - Ruchi Agrawal.jpg
+    - face_reco_python/images/IMG_20220623_205813 - upasana chauhan.jpg
+    - face_reco_python/images/IMG_20220704_003220 - Vanshika Ahuja.jpg
+    - face_reco_python/images/Maanu - Karandeep Kajal.JPG
+    - face_reco_python/images/My_Photo - Gauri Omer.jpeg
+    - face_reco_python/images/mypic - Aditi Yadav.jpg
+    - face_reco_python/images/photo - Jagdish Patil.jpg
+    - face_reco_python/images/PhotoGrid_Plus_1654498707067 - Saahieb Singh.jpg
+    - face_reco_python/images/sample.jpeg
+    - face_reco_python/images/Screenshot_20220705-110853_Gallery - Chocochip Cookie.jpg
+    - face_reco_python/images/Snapchat-291186866 - aanchal kapoor.jpg
+    - face_reco_python/images/Snapchat-383056486 - Aayushi Waghade.jpg
+    - face_reco_python/images/Snapchat-694599750 - Priyanka Raj.jpg
+    - face_reco_python/images/tiger.jpg
+    - face_reco_python/images/tiger-gef26d7739_1280.png
+    - face_reco_python/images/Vardaan bhatnagar - Vardaan Bhatanagar.png
+    - face_reco_python/sample.jpeg
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware.
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
